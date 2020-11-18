@@ -44,28 +44,6 @@
 							<li><a href="Resume.html" target="_blank" class="button"><font color="black">Resume</font></a></li>
 						</ul>
 					</section>
-<!--								<ul>
-                                  <li>Modeled the Forward & Inverse Kinematics, Jacobian, Dynamics and Tip Path Planning for the Robot.</li>
-                                  <li>Implemented and simulated an LQR controller for stable trot gait over uneven surfaces, in MATLAB.</li>
-                                  <li>Designed CAD Model of the Robot in SOLIDWORKS, for Simulating the robot in V-REP and 3D Printing the parts.</li>
-                                  <li>Used Brushless Motors with encoders for actuating the all the robot joints.</li>
-                                  <li>Based on ROS and will use LiDAR-based SLAM for navigation.</li>
-                                </ul>								
-								<ul>
-                                  <li><p>Implemented a Servo mechanism to tilt the Arms, and used an Arduino to switch between ground and air mode.</p></li>
-								  <li><p>Used a LiDAR to create a Point Cloud for 3-D Mapping the area and visualized the Point Cloud with Processing IDE.</p></li>
-								  <li><p>Added slot for Modular attachments and Achieved the objective to reach and visualize inaccessible areas.</p></li>
-                                </ul>								
-								<ul>
-                                  <li><p>Created Map of the environment using LiDAR-based SLAM and RRT Exploration package.</p></li>
-								  <li><p>Developed an Astar path planner to reach the trash location, in C++ 11/14 following Agile Development Process.</p></li>
-								  <li><p>Performed Rostest and Unit testing with googletest, and used catkin as Build System.</p></li>
-								  <li><p>Documented with Doxygen and performed Continuous Integration(CI) using Travis and Coveralls with 94% coverage.</p></li>
-                                </ul>
-								<ul>
-                                  <li><p>Used Steppers motors to achieve accurate positioning and wrote the code in Embedded C.</p></li>
-                                </ul>
--->
 
 				<!-- Two -->
 					<section id="two">
@@ -91,18 +69,19 @@
 								<code><font color="Red">LQR Controller</font></code>
 								<code><font color="Red">Stereo Vision</font></code>
 								<code><font color="Red">Brushless Motors</font></code>	
+								<code><font color="Red">Gearing</font></code>
+								<code><font color="Red">Torque Control</font></code>
+								<code><font color="Red">3D Printing</font></code>			
 								</p>
 							</article>
 
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://youtu.be/1xzaJWrJJi0?autoplay=1" class="image fit thumb"><img src="images/thumbs/AutonomousWheelchair/AutonomousWheelchair.PNG" alt="" /></a>
 								<h3 style="font-family:verdana;"><font color="black"><u>Autononous Wheelchair</u></font></h3>
-								<p><font color="black">Built an Autonomous Wheelchair base for kids, to provide indoor navigation.<br/>
+								<p><font color="black">Built a ROS based Autonomous Wheelchair base for kids, to provide indoor navigation.<br/>
 								<ul>
-                                  <li><p>Created a ROS Package to make a Wheelchair navigate in an indoor environment autonomously.</p></li>
 								  <li><p>Deployed & Tested our software on actual Differential Drive Wheelchair.</p></li>
-								  <li><p>Implemented PID controllers for velocity and position reference tracking.</p></li>
-								  <li><p>Fused the Wheel encoder & LiDAR data to obtain Odometry, and used AMCL for localization</p></li>
+								  <li><p>Implemented PID controllers for velocity and position reference tracking.Fused the Wheel encoder & LiDAR data to obtain Odometry, and used AMCL for localization</p></li>
 								  <li><p>Explored and Mapped the environment using RRT Exploration and LiDAR-based SLAM with Gmapping.</p></li>
 								  <li><p>Developed an A* path planner for global path planning, in C++ 11/14 following google style guide, Agile Development Process & Test Driven Development. As well as maintained a product backlog & Worklog</p></li>
 								  <li><p>Performed Unit testing with googletest and Continuous Integration(CI) using Travis and Coveralls with 95% coverage. Documented the software with doxygen</p></li>
@@ -113,6 +92,9 @@
 								<code><font color="Red">AIP</font></code>
 								<code><font color="Red">CI/CD</font></code>
 								<code><font color="Red">Unit Testing</font></code>
+								<code><font color="Red">ROS</font></code>
+								<code><font color="Red">Gazebo</font></code>
+								<code><font color="Red">SLAM</font></code>
 								<code><font color="Red">Dynamic Obstacle Avoidance</font></code>
 								<code><font color="Red">LiDAR</font></code>
 								<code><font color="Red">Differential Drive</font></code>
@@ -138,38 +120,48 @@
 								<code><font color="Red">Costmap</font></code>
 								<code><font color="Red">Trajectory planners</font></code>
 								</p>
-                                	
 							</article>
 
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/artag/lena.png" class="image fit thumb"><img src="images/thumbs/artag/lena.png" alt="" /></a>
+								<h3 style="font-family:verdana;"><font color="black"><u>Augmented Reality(AR)</u></font></h3>
+								<p><font color="black">Superimposed images and drawed 3D Cubes on AR tags in a video sequence<br/>
+								<ul>
+								  <li><p>Performed contour detection and filtered out unwanted contours for detecting AR tag.</p></li>
+								  <li><p>Performed homography on tag contours to get top view of tag and then detect the tag ID.</p></li>
+								  <li><p>Decided orientation of lena based on tag, and superimposed it on tag using inverse warping.</p></li>
+								  <li><p>Calculated the Projection matrix using camera parameters to draw cubes on tags</p></li>
+								</ul></font><p>								
+								<code><font color="Red">OpenCV</font></code>
+								<code><font color="Red">Homogaphy</font></code>
+								<code><font color="Red">Warp Prspective</font></code>
+								<code><font color="Red">contour detection</font></code>
+								<code><font color="Red">AR</font></code>
+								</p>	
+							</article>
 
-<!-- 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/RajPShinde/eco-bot" class="image fit thumb"><img src="images/thumbs/ecobot/ecobot.png" alt="" /></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>Eco-bot</u></font></h3>
-								<p><font color="black">Developed a ROS Package to simulate a Turtlebot in Gazebo to demonstrate a trash-collecting robot.<br/>
-																<ul>
-                                  <li><p>Created Map of the environment using LiDAR-based SLAM and RRT Exploration package.</p></li>
-								  <li><p>Developed an Astar path planner to reach the trash location, in C++ 11/14 following Agile Development Process.</p></li>
-								  <li><p>Performed Rostest and Unit testing with googletest, and used catkin as Build System.</p></li>
-								  <li><p>Documented with Doxygen and performed Continuous Integration(CI) using Travis and Coveralls with 94% coverage.</p></li>
-                                </ul></font><p>
-								<code><font color="Red">ROS Kinetic</font></code>
-								<code><font color="Red">SLAM</font></code>
-								<code><font color="Red">Gazebo</font></code>
-								<code><font color="Red">C++ 11/14</font></code>
-								<code><font color="Red">Unit Testing</font></code>
-								<code><font color="Red">Continuous Integration</font></code>
-								<code><font color="Red">Doxygen</font></code>
-								<code><font color="Red">A* Path Planner</font></code>
-								<code><font color="Red">RRT</font></code>
-								</p>
-							
-							</article> -->
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/LaneDetection/LaneDetection.png" class="image fit thumb"><img src="images/thumbs/LaneDetection/LaneDetection.png" alt="" /></a>
+								<h3 style="font-family:verdana;"><font color="black"><u>Lane & Turn Detection</u></font></h3>
+								<p><font color="black">Implemented a Pipeline for lane and turn detection in challenging Scenarios like, poor lighting conditions, lane breaks, shadows.<br/>
+								<ul>
+                                  <li><p>Detected the lanes by first converting video sequence into HSL color space and then by using using Hough lines & histogram of lane approach.</p></li>
+								  <li><p>Implemented Warp Perspective and Homography from scratch for our algorithm. Also used it for creating overlays on road</p></li>
+								  <li><p>Used Image processing methods like gamma correction, Adaptive Histogram Equilization for improving video sequence.</p></li>
+                                </ul></font><p>								
+								<code><font color="Red">OpenCV</font></code>
+								<code><font color="Red">Homogaphy</font></code>
+								<code><font color="Red">Warp Prspective</font></code>
+								<code><font color="Red">Hough Lines</font></code>
+								<code><font color="Red">Histogram of lanes</font></code>
+								</p>		
+							</article>
 
-														<article class="col-6 col-12-xsmall work-item">
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://youtu.be/Osv7k-miXK8?autoplay=1" class="image fit thumb"><img src="images/thumbs/drone/drone.jpg" alt="" /></a>
 								<h3 style="font-family:verdana;"><font color="black"><u>Modular Rescue and Surveillance Drone</u></font></h3>
 								<p><font color="black">Built a Quadcopter, that along with its flying capabilities, also navigates on the ground surface by tilting its motors.<br/>
-																<ul>
+								<ul>
                                   <li><p>Implemented a Servo mechanism to tilt the Arms, and used an Arduino to switch between ground and air mode.</p></li>
 								  <li><p>Used a LiDAR to create a Point Cloud for 3-D Mapping the area and visualized the Point Cloud with Processing IDE.</p></li>
 								  <li><p>Added slot for Modular attachments and Achieved the objective to reach and visualize inaccessible areas.</p></li>
@@ -180,45 +172,26 @@
 								<code><font color="Red">Point Cloud</font></code>
 								<code><font color="Red">Kinematics</font></code>
 								<code><font color="Red">ArduPilot</font></code>
-								</p>
-                                	
+								</p>  	
 							</article>
 
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/LaneDetection/LaneDetection.png" class="image fit thumb"><img src="images/thumbs/LaneDetection/LaneDetection.png" alt="" /></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>Lane & Turn Detection</u></font></h3>
-								<p><font color="black">Performed Homography and warping to superimpose lena image on an AR tah in a moving video.<br/>
-
-																									</font>
-																
-								<code><font color="Red">OpenCV</font></code>
-								<code><font color="Red">Homogaphy</font></code>
-								<code><font color="Red">Warp Prspective</font></code>
-								<code><font color="Red">Hough Lines</font></code>
-								<code><font color="Red">Histogram of lanes</font></code>
+								<a href="https://github.com/RajPShinde/eco-bot" class="image fit thumb"><img src="images/thumbs/ecobot/ecobot.png" alt="" /></a>
+								<h3 style="font-family:verdana;"><font color="black"><u>Eco-bot</u></font></h3>
+								<p><font color="black">Developed a ROS Package to simulate a Turtlebot in Gazebo to demonstrate a trash-collecting robot.<br/>
+								<ul>
+                                  <li><p>Used Gampping for SLAM. Developed our code in C++ 11/14 to reach and collect the trash.</p></li>
+								  <li><p>Performed Rostest and Unit testing with googletest.</p></li>
+								  <li><p>Documented with Doxygen and performed Continuous Integration(CI) using Travis and Coveralls with 94% coverage.</p></li>
+                                </ul></font><p>
+								<code><font color="Red">ROS</font></code>
+								<code><font color="Red">Turtlebot 2</font></code>
+								<code><font color="Red">Gazebo</font></code>
+								<code><font color="Red">A* Path Planner</font></code>
 								</p>
-								
 							</article>
 
 
-														<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/artag/lena.png" class="image fit thumb"><img src="images/thumbs/artag/lena.png" alt="" /></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>AR tag Detection & Image Superimposing</u></font></h3>
-								<p><font color="black">Performed Homography and warp, with lane filtering in HLS color space and using the histogram of lanes approach<br/>
-									<ul>
-								  <li><p>Performed contour detection and filtered out unwanted contours for detecting AR tag.</p></li>
-								  <li><p>Performed homography on tag contours to get top view of tag and then detect the tag ID.</p></li>
-								  <li><p>Decided orientation of lena based on tag, and superimposed it on tag using inverse warping.</p></li>
-																 </ul></font><p>
-																
-								<code><font color="Red">OpenCV</font></code>
-								<code><font color="Red">Homogaphy</font></code>
-								<code><font color="Red">Warp Prspective</font></code>
-								<code><font color="Red">contour detection</font></code>
-								<code><font color="Red">AR/VR</font></code>
-								</p>
-								
-							</article>
 
 
 							<article class="col-6 col-12-xsmall work-item">
@@ -255,7 +228,7 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/ransac/ransac.png" class="image fit thumb"><img src="images/thumbs/ransac/ransac.png" alt="" /></a>
 								<h3 style="font-family:verdana;"><font color="black"><u>Outlier Rejection using RANSAC & Least square fitting</u></font></h3>
-								<p><font color="black">rejected outliers in a given dataset using RANSAC and LSF<br/>
+								<p><font color="black">Rejected outliers in a given dataset using RANSAC and LSF<br/>
 																</font>
 																
 								<code><font color="Red">Perception</font></code> 
