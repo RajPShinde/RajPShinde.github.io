@@ -79,61 +79,70 @@
 								<ul>
                                   <li><p>Modeled the Forward & Inverse Kinematics, Jacobian, Dynamics and Tip Path Planning for the Robot.</p></li>
                                   <li><p>Implemented and simulated an LQR controller for stable trot gait over uneven surfaces, in MATLAB.</p></li>
-                                  <li><p>Designed CAD Model of the Robot in SOLIDWORKS, for Simulating the robot in V-REP and 3D Printing the parts.</p></li>
-                                  <li><p>Used Brushless Motors with encoders for actuating the all the robot joints.</p></li>
-                                  <li><p>Based on ROS and will use LiDAR-based SLAM for navigation.</p></li>
+                                  <li><p>Designed CAD Model of the Robot in SOLIDWORKS to generate a URDF for Gazebo & V-REP Simulations.</p></li>
+                                  <li><p>Simulated the robot in V-REP to perform test & Analysis of Kinematics Model & Dynamics.</p></li>
+                                  <li><p>Designed a PD controller to introduce virtual compliance in joints with brushless motors to take ground impacts.</p></li>
+                                  <li><p>Based on ROS and will use Stereo vision for creating a costmap of terrain and plain footsteps.</p></li>
                                 </ul></font><p>
-								<code><font color="Red">ROS</font></code><code><font color="Red">Kinematics</font></code>
-								<code><font color="Red">V-REP Simulation</font></code><code><font color="Red">Arduino</font></code>
+                                <code><font color="Red">Quadruped Robot</font></code>
+								<code><font color="Red">ROS</font></code>
+								<code><font color="Red">Kinematics</font></code>
+								<code><font color="Red">Simulation</font></code>
 								<code><font color="Red">LQR Controller</font></code>
-								<code><font color="Red">Brushless Motors</font></code>
-								
-								
+								<code><font color="Red">Stereo Vision</font></code>
+								<code><font color="Red">Brushless Motors</font></code>	
 								</p>
-								
 							</article>
 
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://youtu.be/1xzaJWrJJi0?autoplay=1" class="image fit thumb"><img src="images/thumbs/AutonomousWheelchair/AutonomousWheelchair.PNG" alt="" /></a>
 								<h3 style="font-family:verdana;"><font color="black"><u>Autononous Wheelchair</u></font></h3>
-								<p><font color="black">Built an Autonomous base for a kids wheelchair to provide indoor navigation<br/>
-																<ul>
+								<p><font color="black">Built an Autonomous Wheelchair base for kids, to provide indoor navigation.<br/>
+								<ul>
                                   <li><p>Created a ROS Package to make a Wheelchair navigate in an indoor environment autonomously.</p></li>
-								  <li><p>Deployed the software on actual wheelchair hardware based on differential drive.</p></li>
-								  <li><p>Implemented low-level PID controllers for velocity and position reference tracking.</p></li>
+								  <li><p>Deployed & Tested our software on actual Differential Drive Wheelchair.</p></li>
+								  <li><p>Implemented PID controllers for velocity and position reference tracking.</p></li>
+								  <li><p>Fused the Wheel encoder & LiDAR data to obtain Odometry, and used AMCL for localization</p></li>
+								  <li><p>Explored and Mapped the environment using RRT Exploration and LiDAR-based SLAM with Gmapping.</p></li>
+								  <li><p>Developed an A* path planner for global path planning, in C++ 11/14 following google style guide, Agile Development Process & Test Driven Development. As well as maintained a product backlog & Worklog</p></li>
+								  <li><p>Performed Unit testing with googletest and Continuous Integration(CI) using Travis and Coveralls with 95% coverage. Documented the software with doxygen</p></li>
                                 </ul></font><p>
+                                <code><font color="Red">A* Path Planner</font></code>
 								<code><font color="Red">RRT Path Planner</font></code>
+								<code><font color="Red">C++ 11/14</font></code>
+								<code><font color="Red">AIP</font></code>
+								<code><font color="Red">CI/CD</font></code>
+								<code><font color="Red">Unit Testing</font></code>
 								<code><font color="Red">Dynamic Obstacle Avoidance</font></code>
 								<code><font color="Red">LiDAR</font></code>
 								<code><font color="Red">Differential Drive</font></code>
 								<code><font color="Red">PID</font></code>
-								<code><font color="Red">Kinematics</font></code>
 								</p>
-                                	
 							</article>
-
-														<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/doggo/doggo.png" class="image fit thumb"><img src="images/thumbs/doggo/doggo.png" alt="" /></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>Footstep Affordance and Planner on Uneven terrain for Quadruped Robot</u></font></h3>
-								<p><font color="black">Implementing an algorithm to build a costmap for selecting the best foothold positions for a quadruped robot, and a footstep planner to avoif hitting terrain.<br/>
-																<ul>
-                                  <li><p>Used Ocromapp to create a 3D occupancy map of the environment.</p></li>
-								  <li><p>Processed the Occupancy map to detect terrain features and create a costmap based on surface inclinatons & edges.</p></li>
-								  <li><p>Used splines to create a plan for leg end-effector.</p></li>
-                                </ul></font><p>
-								<code><font color="Red">Doggo</font></code>
-								<code><font color="Red">Quadruped</font></code>
-								<code><font color="Red">Point Cloud</font></code>
-								<code><font color="Red">Realsense Cameras</font></code>
-								<code><font color="Red">Kinematics</font></code>
-								<code><font color="Red">Octree</font></code>
-								<code><font color="Red">Costmap</font></code>
-								</p>
-                                	
-							</article>
-
 
 							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/doggo/doggo.png" class="image fit thumb"><img src="images/thumbs/doggo/doggo.png" alt="" /></a>
+								<h3 style="font-family:verdana;"><font color="black"><u>Locomotion of Quadruped Robot over Uneven Terrain</u></font></h3>
+								<p><font color="black">Implementing an algorithm to build a terrain costmap, footstep planner & a trajectory planner for selecting the best foothold positions for a quadruped robot to walk on an uneven terrain<br/>
+								<ul>
+                                  <li><p>Extracted terrain features like slope using Principle Component Analysis(PCA) and height deviations from a 3D Occupancy generated by OctoMap to create footstep affordance/costmap.</p></li>
+								  <li><p>Implemented footstep planners & trajectory planners for leg end-effector using splines to avoid terrain obstacles.</p></li>
+								  <li><p>Currently testing the pipeline on a Stanford Doggo Quadruped equipped with NVIDIA Jetson TX2 & Intel Realsense Depth & Tracking Camera.</p></li>
+                                </ul></font><p>
+								<code><font color="Red">Stanford Doggo</font></code>
+								<code><font color="Red">3D Occupancy</font></code>
+								<code><font color="Red">Point Cloud</font></code>
+								<code><font color="Red">PCA</font></code>
+								<code><font color="Red">Locomotion</font></code>
+								<code><font color="Red">OCTOMAP</font></code>
+								<code><font color="Red">Costmap</font></code>
+								<code><font color="Red">Trajectory planners</font></code>
+								</p>
+                                	
+							</article>
+
+
+<!-- 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://github.com/RajPShinde/eco-bot" class="image fit thumb"><img src="images/thumbs/ecobot/ecobot.png" alt="" /></a>
 								<h3 style="font-family:verdana;"><font color="black"><u>Eco-bot</u></font></h3>
 								<p><font color="black">Developed a ROS Package to simulate a Turtlebot in Gazebo to demonstrate a trash-collecting robot.<br/>
@@ -143,7 +152,7 @@
 								  <li><p>Performed Rostest and Unit testing with googletest, and used catkin as Build System.</p></li>
 								  <li><p>Documented with Doxygen and performed Continuous Integration(CI) using Travis and Coveralls with 94% coverage.</p></li>
                                 </ul></font><p>
-																<code><font color="Red">ROS Kinetic</font></code>
+								<code><font color="Red">ROS Kinetic</font></code>
 								<code><font color="Red">SLAM</font></code>
 								<code><font color="Red">Gazebo</font></code>
 								<code><font color="Red">C++ 11/14</font></code>
@@ -154,7 +163,7 @@
 								<code><font color="Red">RRT</font></code>
 								</p>
 							
-							</article>
+							</article> -->
 
 														<article class="col-6 col-12-xsmall work-item">
 								<a href="https://youtu.be/Osv7k-miXK8?autoplay=1" class="image fit thumb"><img src="images/thumbs/drone/drone.jpg" alt="" /></a>
