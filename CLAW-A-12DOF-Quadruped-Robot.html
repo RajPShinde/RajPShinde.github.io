@@ -46,15 +46,26 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<center><font color="black"><h2>CLAW- The Quadruped Robot</font></h2></center>
+							<center><font color="black"><h2>CLAW- A Quadruped Dog Robot</font></h2></center>
 						</header>
-						<center><img height="500" src="images/thumbs/quadruped/render.PNG" alt="" /></center>
-						<font color="black"><p style="text-indent: 40px">This is CLAW! A 12-DOF Quadruped Robot. The design for the robot is inspired from the Boston Dynamics's Spot. My Motivation behind this project is to build a dog sized quadruped robot at a very low cost, and capable of traversing any terrain just like any other legged animal.</p></font>
+						<center><img height="300" src="images/thumbs/quadruped/quadruped.jpg" alt="" /></center>
+						<font color="black"><p style="text-indent: 40px">This is CLAW! A 12-DOF Quadruped Dog Robot, Capable of walking on complex terrain and performing agile movements. The design for the robot is inspired from the Boston Dynamics's Spot. My Motivation behind this project is to gain experience into the legged robotics domain as well to create an Open-Source Legged Robot Platform for other people all across the world.</p>
+						<ul>
+							<li>Modeled the Forward & Inverse Kinematics, Jacobian & Velocity Kinematics.</li>
+							<li>Designed Jerk Optimized Trajectories using Quintic Polynomial, Parameterized Bezier's, Compound Cycloid for Pose manipulation and Gait engine.</li>
+							<li>Implemented a Cartisian PD controller to introduce virtual compliance in joints to take ground impacts and emulate an animals leg.</li>
+							<li>Designed and Developed the entire Hardware: Mechanical, Electrical as well as CAD Models.</li>
+							<li>Simulated the robot in V-REP to perform test & Analysis of Kinematics & Dynamics.</li>
+							<li>Based on ROS and uses Stereo vision for creating a terrain costmap to plan footstep.</li>
+							<li>Implemented and simulated an LQR controller for stable trot gait over uneven surfaces, in MATLAB.</li>
+							</ul>
+						</font>
 						<video height="500" autoplay loop id="video-background" muted plays-inline><source src="images/thumbs/quadruped/quadruped.webm" type="video/webm"></video>
-                        <ul class="actions">
+						<ul class="actions">
 							<li><a href="https://github.com/RajPShinde/CLAW" target="_blank" class="button"><font color="black">Github</font></a></li>
 						</ul>
 					</section>
+
 					
 				<!-- Five -->
 					<section id="Four">

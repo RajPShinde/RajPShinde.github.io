@@ -48,7 +48,7 @@
 						<header class="major">
 							<font color="black"><h2>About Me</font></h2>
 						</header>
-						<font color="black"><p style="text-indent: 40px">Hello! I am Raj, My interests lie in Autonomous Vehicles & Legged Robotics, more specifically in Motion Planning and Controls. I love working with both hardware and software. I received my Master of Engineering in Robotics, from the University of Maryland, College Park in May 2021. I did my Bachelor of Engineering in Electronics & Telecommunication from RGIT, Mumbai 2019. I currently work as a Robotics Software Engineer at ViaBot.</p></font>
+						<font color="black"><p style="text-indent: 40px">Hello! I am Raj, Currently Working as a Robotics Software Engineer at ViaBot. My interests lie in Autonomous Vehicles, Mobile & Legged Robotics, more specifically in the Motion Planning and Controls Domain. I love working with both hardware and software. I received my Master of Engineering in Robotics, from the University of Maryland, College Park in May 2021. I also received my Bachelor of Engineering in Electronics & Telecommunication from RGIT, Mumbai in 2019. Have a look at some of my Projects below!</p></font>
                         <ul class="actions">
 							<li><a href="Resume.html" target="_blank" class="button"><font color="black">Resume</font></a></li>
 						</ul>
@@ -61,16 +61,16 @@
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://youtu.be/v8vOwep8IQM?autoplay=1" class="image fit thumb"><video autoplay loop id="video-background" muted plays-inline><source src="images/thumbs/quadruped/quadruped.webm" type="video/webm"></video></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>Quadruped Dog Robot</u></font></h3>
-								<p><font color="black">Built a 12-DOF Quadruped Dog Robot.<br/>
+								<h3 style="font-family:verdana;"><font color="black"><u>Quadruped Dog Robot: CLAW</u></font></h3>
+								<p><font color="black">Built a 12-DOF Quadruped Dog Robot Capable of walking on complex terrain and performing agile movements.<br/>
 								<ul>
-								  <li><p>Based on ROS and will use Stereo vision for creating a costmap of terrain and plain footsteps.</p></li>
-                                  <li><p>Modeled the Forward & Inverse Kinematics, Jacobian, Dynamics and Tip Path Planning for the Robot.</p></li>
-                                  <li><p>Implemented and simulated an LQR controller for stable trot gait over uneven surfaces, in MATLAB.</p></li>
-                                  <li><p>Designed CAD Model of the Robot in SOLIDWORKS to generate a URDF for Gazebo & V-REP Simulations.</p></li>
-                                  <li><p>Simulated the robot in V-REP to perform test & Analysis of Kinematics Model & Dynamics.</p></li>
-                                  <li><p>Designed a PD controller to introduce virtual compliance in joints with brushless motors to take ground impacts.</p></li>
-                                  <li><p>Based on ROS and will use Stereo vision for creating a costmap of terrain and plain footsteps.</p></li>
+                                  <li><p>Modeled the Forward & Inverse Kinematics, Jacobian & Velocity Kinematics.</p></li>
+								  <li><p>Designed Jerk Optimized Trajectories using Quintic Polynomial, Parameterized Bezier's, Compound Cycloid for Pose manipulation and Gait engine.</p></li>
+								  <li><p>Implemented a Cartisian PD controller to introduce virtual compliance in joints to take ground impacts and emulate an animals leg.</p></li>
+                                  <li><p>Designed and Developed the entire Hardware: Mechanical, Electrical as well as CAD Models.</p></li>
+                                  <li><p>Simulated the robot in V-REP to perform test & Analysis of Kinematics & Dynamics.</p></li>
+                                  <li><p>Based on ROS and uses Stereo vision for creating a terrain costmap to plan footstep.</p></li>
+								  <li><p>Implemented and simulated an LQR controller for stable trot gait over uneven surfaces, in MATLAB.</p></li>
                                 </ul></font><p>
                                 <code><font color="Red">Quadruped Robot</font></code>
 								<code><font color="Red">ROS</font></code>
@@ -226,21 +226,18 @@
 
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="" class="image fit thumb"><video autoplay loop id="video-background" muted plays-inline><img src="images/fulls/" alt="" /></a>
-								<h3 style="font-family:verdana;"><font color="black"><u>3D Graph SLAM using NDT Scan Matching</u></font></h3>
-								<p><font color="black">3D Graph SLAM using NDT Scan Matching.<br/>
+								<h3 style="font-family:verdana;"><font color="black"><u>2D Graph SLAM using ICP Scan Matching</u></font></h3>
+								<p><font color="black">2D Graph SLAM using ICP Scan Matching and g2o based pose graph optimization.<br/>
 								<ul>
-                                  <li><p>Extracted terrain features like slope using Principle Component Analysis(PCA) and height deviations from a 3D Occupancy Octree generated by OctoMap to create footstep affordance/costmap.</p></li>
-								  <li><p>Implemented footstep planners & trajectory planners for leg end-effector using splines to avoid terrain obstacles.</p></li>
-								  <li><p>Currently testing the pipeline in simulations and actual Stanford Doggo Quadruped equipped with NVIDIA Jetson TX2 & Intel Realsense Depth & Tracking Camera.</p></li>
+								  <li><p>Implemented a SLAM pipeline using G2O based Pose Graph Optimization for LiDAR and Wheel Odometry Data.</p></li>
+								  <li><p>Used ICP for creating edges between pose's while using odometry based initial guesses and thresholds.</p></li>
                                 </ul></font><p>
-								<code><font color="Red">Stanford Doggo</font></code>
-								<code><font color="Red">3D Occupancy</font></code>
-								<code><font color="Red">Point Cloud</font></code>
-								<code><font color="Red">PCA</font></code>
-								<code><font color="Red">Locomotion</font></code>
-								<code><font color="Red">OCTOMAP</font></code>
-								<code><font color="Red">Costmap</font></code>
-								<code><font color="Red">Trajectory planners</font></code>
+								<code><font color="Red">Pose Graph Optimization</font></code>
+								<code><font color="Red">SLAM</font></code>
+								<code><font color="Red">Mapping</font></code>
+								<code><font color="Red">Localization</font></code>
+								<code><font color="Red">G2O</font></code>
+								<code><font color="Red">LiDAR</font></code>
 								</p>
 							</article>
 
